@@ -14,4 +14,4 @@ I'd like to know more about MarkDown, specifically the difference between MarkDo
 ## 5. What issues did you help your fellow classmates out with this past homework cycle?
 I probably wasn't much help to any of my classmates this homework cycle, I was having a hard time understanding it
  myself.
-[image of my editor](desktop/myeditor.png)
+[image of my editor](../desktop/myeditor.png)
