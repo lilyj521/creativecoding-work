@@ -12,4 +12,6 @@ I had some trouble understanding exactly what Git *was*, so I did some research 
 ## 4. Is there anything in particular you learned that you would like to discuss further?
 I'd like to know more about MarkDown, specifically the difference between MarkDown and HTML.
 ## 5. What issues did you help your fellow classmates out with this past homework cycle?
-I probably wasn't much help to any of my classmates this homework cycle, I was having a hard time understanding it myself.
+I probably wasn't much help to any of my classmates this homework cycle, I was having a hard time understanding it
+ myself.
+! [image of my editor](myeditor.png)
