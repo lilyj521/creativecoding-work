@@ -13,4 +13,4 @@ I had some trouble understanding exactly what Git *was*, so I did some research 
 I'd like to know more about MarkDown, specifically the difference between MarkDown and HTML.
 ## 5. What issues did you help your fellow classmates out with this past homework cycle?
 I discussed the issue of images not embedding properly with classmates on Github.
-![image of my editor](myeditor.jpg)
+![image of my editor](../documents/myeditor.jpg)
