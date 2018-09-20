@@ -1,7 +1,7 @@
 #### Lily Johnson
 
 ### 1. Summarize the work you did this homework cycle. Paying particular attention to the individual choices you made.
-This week I went into Atom and began playing around with different functions, learning how they worked, and becoming familiar with the parameters. I then began to construct my monster portrait. I started with the background, and then moved to the head and body. I used a lot of ellipses, but I also used the triangle and arc.
+This week I went into Atom and began playing around with different functions, learning how they worked, and becoming familiar with the parameters. I then began to construct my monster portrait. I started with the background, and then moved to the head and body. I used a lot of ellipses, but I also used the triangle, point, and arc.
 ### 2. What steps did you take to complete the assignment?
 First, I watched the videos and read the material provided on the website. Then, I went into Atom and began playing around with different functions, learning how they worked, and becoming familiar with the parameters. I then began to construct my monster portrait. I started with the background, and then moved to the head and body. I used a lot of ellipses, but I also used the triangle and arc. Once I was finished, I uploaded my work to my repository.
 ### 3. Did you have any problems or issues? How did you solve these? Did you post about these to the class repo issue tracker? Did you receive any useful feedback from your classmates?
