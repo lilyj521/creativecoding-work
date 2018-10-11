@@ -1,6 +1,6 @@
 Lily Johnson, Section 50
 
-[Live Sketch Link](file:///Users/lily/Documents/paperz/Creative%20Coding/creativecoding-work/coursework/hw-7/index.html)
+[Live Sketch Link](https://lilyj521.github.io/creativecoding-work/coursework/hw-7/)
 
 # HW 7 | Describe then Alter the Bouncing Ball
 
