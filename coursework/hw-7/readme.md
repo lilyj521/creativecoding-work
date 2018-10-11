@@ -1,7 +1,6 @@
-Your Name, Your Section Number
+Lily Johnson, Section 50
 
-[Live Sketch Link](Your Live Link)
-## Lily Johnson
+[Live Sketch Link](file:///Users/lily/Documents/paperz/Creative%20Coding/creativecoding-work/coursework/hw-7/index.html)
 
 # HW 7 | Describe then Alter the Bouncing Ball
 
@@ -11,6 +10,4 @@ The original code makes a sketch of a ball that bounces around the screen and ch
 
 ## How did you alter the sketch?
 
-<!--
-Please describe how and why you changed the sketch?
--->
+In this sketch, I added an ellipse in the middle that changes color depending on what quadrant of the canvas your cursor is in. I also made the ball shift slowly from white to black and back again as it travels.

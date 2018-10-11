@@ -8,6 +8,7 @@ ball.delta_x = 1;
 ball.delta_y = 1;
 ball.scale_x = 1;
 ball.scale_y = 1;
+ball.color = 1;
 
 function setup() {
     createCanvas(windowWidth, 400);
@@ -18,6 +19,10 @@ function setup() {
 
 function draw() {
 
+ball.color = ball.color + 1
+if (ball.color > 255) {
+  ball.color = -1 * ball.color
+}
     ball.x += ball.delta_x * ball.scale_x;
     ball.y += ball.delta_y * ball.scale_y;
 
@@ -28,23 +33,23 @@ function draw() {
     if (ball.y >= height || ball.y <= 0) {
         ball.delta_y = -1 * ball.delta_y;
     }
+
     if (mouseX >= width/2 && mouseY <= height/2) {
-      fill('orange')
-      ellipse(width/2,height/2,100,100)
+      fill('orange');
+      ellipse(width/2,height/2,100,100);
     } else if (mouseX >= width/2 && mouseY >= height/2) {
-      fill('yellow')
-      ellipse(width/2,height/2,100,100)
-    }
-    if (mouseX <= width/2 && mouseY <= height/2) {
-      fill('cyan')
-      ellipse(width/2,height/2, 100,100)
-    } else if (mouseX <= width/2 && mouseY >= height/2) {
-      fill('pink')
-      ellipse(width/2,height/2,100,100)
+      fill('yellow');
+      ellipse(width/2,height/2,100,100);
+    } else if (mouseX <= width/2 && mouseY <= height/2) {
+      fill('cyan');
+      ellipse(width/2,height/2, 100,100);
+    } else {
+      fill('pink');
+      ellipse(width/2,height/2,100,100);
     }
 
 
-   fill(255);
+   fill(ball.color);
     ellipse(ball.x, ball.y, ball.width, ball.width);
 
 }
