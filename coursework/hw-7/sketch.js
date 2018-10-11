@@ -41,10 +41,11 @@ if (ball.color > 255) {
     } else if (mouseX >= width/2 && mouseY >= height/2) {
       fill('yellow');
       ellipse(width/2,height/2,100,100);
-    } else if (mouseX <= width/2 && mouseY <= height/2) {
+    }
+     if (mouseX <= width/2 && mouseY <= height/2) {
       fill('cyan');
       ellipse(width/2,height/2, 100,100);
-    } else {
+    } else if (mouseX <= width/2 && mouseY >= height/2){
       fill('pink');
       ellipse(width/2,height/2,100,100);
     }
