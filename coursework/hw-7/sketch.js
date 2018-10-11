@@ -20,6 +20,7 @@ function setup() {
 function draw() {
 
 ball.color = ball.color + 1
+
 if (ball.color > 255) {
   ball.color = -1 * ball.color
 }
