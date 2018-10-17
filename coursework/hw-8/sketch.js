@@ -6,25 +6,31 @@ createCanvas(windowWidth,windowHeight);
 function draw() {
   background('rgb(209, 168, 255)')
 
+//white circles
+push()
 for (let x = 0; x <= width; x += 119) {
   for (let y = 0; y <= height; y += 133) {
   noStroke()
   ellipse(x, y, 75, 75)
     }
   }
+pop()
+
+  //right-facing circles
 push()
-  for (let i = 5; i <= width; i += 119) {
+  for (let i = 6; i <= width; i += 119) {
     for (let e = 5; e <= height; e += 264) {
-      fill('blue')
+      fill('rgb(173, 223, 255)')
       ellipse(i, e, 50, 50)
     }
   }
   pop()
 
+//left-facing circles
   push()
-  for (let i = -5; i <= width; i += 119) {
+  for (let i = -6; i <= width; i += 119) {
     for (let e = 133; e <= height; e += 266) {
-      fill('blue')
+      fill('rgb(255, 189, 236)')
       ellipse(i, e, 50, 50)
     }
   }
