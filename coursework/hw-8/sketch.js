@@ -4,7 +4,7 @@ createCanvas(windowWidth,windowHeight);
 }
 
 function draw() {
-  background('rgb(209, 168, 255)')
+  background('rgb(220, 208, 255)')
 
 //white circles
 push()
@@ -30,7 +30,7 @@ push()
   push()
   for (let i = -6; i <= width; i += 119) {
     for (let e = 133; e <= height; e += 266) {
-      fill('rgb(255, 189, 236)')
+      fill('rgb(255, 196, 232)')
       ellipse(i, e, 50, 50)
     }
   }
