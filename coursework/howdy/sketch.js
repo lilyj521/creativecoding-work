@@ -26,7 +26,6 @@ class Circle {
         this.movX = random(-2, 2);
         this.movY = random(-2, 2);
     }
-     
     show() {
       push();
       noStroke();
