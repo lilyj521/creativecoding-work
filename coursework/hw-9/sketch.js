@@ -11,11 +11,7 @@ function draw() {
 background( 'rgb(199, 245, 255)' );
 
 //add monsters
-createMonster(nums[0],nums[0],nums[0],nums[0]);
-createMonster(nums[1],nums[1],nums[1],nums[1]);
-createMonster(nums[2],nums[2],nums[2],nums[2]);
-createMonster(nums[3],nums[3],nums[3],nums[3]);
-createMonster(nums[4],nums[4],nums[4],nums[4]);
+createMonster(nums[0],nums[3],nums[1],nums[4]);
 }
 
 function createMonster(x,y,w,h) {
