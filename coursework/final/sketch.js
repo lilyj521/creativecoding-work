@@ -10,7 +10,7 @@ for(let i = 0; i < circleAmount; i++){
 
 function draw() {
     background('rgb(242, 213, 237)');
-frameRate(200);
+frameRate(100);
 circle.show();
 circle.move();
 circle.bounce();
@@ -26,7 +26,6 @@ class Circle {
         this.movX = random(-2, 2);
         this.movY = random(-2, 2);
     }
-
     show() {
       push();
       noStroke();
