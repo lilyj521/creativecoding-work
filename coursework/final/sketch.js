@@ -1,61 +1,53 @@
-
-var dragging = false; // Is the object being dragged?
-var rollover = false; // Is the mouse over the ellipse?
-
-var x, y, w, h;          // Location and size
-var offsetX, offsetY;    // Mouseclick offset
+var rx, ry, rw, rh
+var x, y, w, h;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
-  // Starting location
   x = 200;
-  y = windowHeight/2;
-  // Dimensions
+  y = 500
   w = 100;
   h = 100;
+
+  rx = 1250
+  ry = 250
+  rw = 200
+  rh = 300
 }
 
 function draw() {
   background('rgb(255, 198, 235)');
-rect(1250,windowHeight/3,200,300)
 
-  // Is mouse over object
-  if (mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h) {
-    rollover = true;
+//make ball move with arrows
+if (keyIsDown(DOWN_ARROW)) {
+    y += 5;
   }
-  else {
-    rollover = false;
+if (keyIsDown(UP_ARROW)) {
+    y -= 5;
+  }
+if (keyIsDown(LEFT_ARROW)) {
+        x -= 5;
+  }
+if (keyIsDown(RIGHT_ARROW)) {
+          x += 5;
   }
 
-  // Adjust location if being dragged
-  if (dragging) {
-    x = mouseX + offsetX;
-    y = mouseY + offsetY;
-  }
 
-  noStroke();
-  // Different fill based on state
-  if (dragging) {
-    fill ('rgb(255, 157, 216)');
-  } else if (rollover) {
-    fill('rgb(255, 157, 216)');
-  } else {
-    fill('rgb(168, 234, 255)');
-  }
-  ellipse(x, y, w, h);
-}
+//create ball
+noStroke();
+fill('rgb(156, 231, 255)')
+ellipse(x, y, w, h);
 
-function mousePressed() {
-  // Did I click on the rectangle?
-  if (mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h) {
-    dragging = true;
-    // If so, keep track of relative location of click to corner of rectangle
-    offsetX = x-mouseX;
-    offsetY = y-mouseY;
-  }
-}
+//create "goal"
+  push();
+  fill('rgb(255, 125, 211)')
+rect(rx,ry,rw,rh)
+  pop();
 
-function mouseReleased() {
-  dragging = false;
+//display text when "goal" scored
+  if(x >= 1300 && y >= 300 && y <= 500) {
+    fill('rgb(255, 236, 108)')
+    textSize(60)
+    text('you scored a goal!!!',windowWidth/2,100)
+  }
 }
