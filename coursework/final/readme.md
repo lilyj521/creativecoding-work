@@ -1,13 +1,15 @@
 #### Lily Johnson
 
+##                        Final
+
 ### My Work
 For my final, I decided to make a simple game with a soccer-esque theme. I wanted to make it so the player could move a ball into a goal, and then display a message congratulating their success. I liked this idea because I think the simplicity of it is very cute. It's an aesthetic that fits very well into my style of art, and I think in a way it sends the message that even doing a simple task is deserving of praise. This message is very meaningful to me, and I wanted this piece of art to reflect it.
 In my game, the player can use the arrow keys to move the ball into the goal. I watched multiple videos from Shiffman and looked into the P5 library to find inspiration it, and once I'd found my inspiration, I began experimenting. I tried multiple different ways of moving the ball, and considered different ways of encouraging the player: perhaps a running count of goals scored, or a positive message. I didn't really decide on things and then code them, I just started putting things in the code, and taking them out when they didn't work to try something new. My code looks fairly simplistic, but a lot of my time spent making my final was used trying code that I didn't end up using. I deleted and re-did my project multiple times before I was satisfied. There were still more things I would've added to this project if I'd had the time, I would've liked to have confetti fall with the congratulating message, and I would've liked to do more general decoration of the background, but I enjoyed working on this game, and I'm satisfied with my work.
 
-###Steps to Completion
+### Steps to Completion
 I first found inspiration in Shiffman videos and the P5 library. I then started working these ideas into my code. I tried click and dragging the ball to move it, but it wasn't ideal, and I looked into having the ball bounce randomly, but that wasn't exactly what I wanted. I eventually settled on moving the ball with the arrow keys. Once I'd successfully figured out how to input this function, I had to decide how I'd display the congratulatory message. I was able to figure this out on my own by calculating what the perimeter of the "goal" was, and writing an if statement to display the message only when the ball is within those perimeters. After all of that was done, I tweaked my color palette to achieve the desired aesthetic, as I highly prefer pastels. I also messed with fonts and such. At this point, I figured I was finished, but then realized that the player may need instructions, so I added those as well.
 
-###Issues
+### Issues
 I had an issue with the rollover feature when I was originally using click and drag, where it would only work in the lower right quadrant of the ball. It wouldn't light up if you rolled over it anywhere else. I messed with this a ton, but couldn't get it fixed. I solved this problem when I decided to get rid of that function entirely, in favor of using arrow keys instead.
 
 ### What I Learned
