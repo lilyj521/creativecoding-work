@@ -16,7 +16,7 @@ function setup() {
 }
 
 function draw() {
-  background('rgb(255, 198, 235)');
+  background('rgb(250, 190, 230)');
 
 //make ball move with arrows
 if (keyIsDown(DOWN_ARROW)) {
@@ -32,7 +32,6 @@ if (keyIsDown(RIGHT_ARROW)) {
           x += 5;
   }
 
-
 //create ball
 noStroke();
 fill('rgb(156, 231, 255)')
@@ -47,7 +46,14 @@ rect(rx,ry,rw,rh)
 //display text when "goal" scored
   if(x >= 1300 && y >= 300 && y <= 500) {
     fill('rgb(255, 236, 108)')
-    textSize(60)
-    text('you scored a goal!!!',windowWidth/2,100)
+    textFont('Courier')
+    textSize(50)
+    text('you scored a goal!!!',600,100)
   }
+
+  //instructions
+  fill('rgb(250, 242, 130)')
+  textFont('Courier')
+  textSize(17)
+  text('use the arrow keys to move the ball into the goal',50, 770)
 }
