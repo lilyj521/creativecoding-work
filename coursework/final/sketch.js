@@ -1,50 +1,61 @@
-let circle;
-let circleAmount = 6;
+
+var dragging = false; // Is the object being dragged?
+var rollover = false; // Is the mouse over the ellipse?
+
+var x, y, w, h;          // Location and size
+var offsetX, offsetY;    // Mouseclick offset
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
-for(let i = 0; i < circleAmount; i++){
-  circle = new Circle(60, 60, 80, ('rgb(136, 204, 247)'))
-    }
-  }
+  createCanvas(windowWidth, windowHeight);
 
-function draw() {
-    background('rgb(242, 213, 237)');
-frameRate(100);
-circle.show();
-circle.move();
-circle.bounce();
+  // Starting location
+  x = 200;
+  y = windowHeight/2;
+  // Dimensions
+  w = 100;
+  h = 100;
 }
 
-class Circle {
-    constructor(x, y, size, color) {
-        this.color = color;
-        this.size = size;
-        this.rad = this.size / 2;
-        this.x = x;
-        this.y = y;
-        this.movX = random(-2, 2);
-        this.movY = random(-2, 2);
-    }
-    show() {
-      push();
-      noStroke();
-      fill(this.color);
-      translate(this.x, this.y);
-      ellipse(60,60,this.size);
-      pop();
-    }
+function draw() {
+  background('rgb(255, 198, 235)');
+rect(1250,windowHeight/3,200,300)
 
-    move() {
-      this.x += this.movX;
-      this.y += this.movY;
-    }
-   bounce() {
-     if(this.x + this.rad >= height || this.x - this.rad <= 0){
-       this.movX *= -1;
-     }
-     if(this.y + this.rad >= height || this.y -this.rad <= 0) {
-       this.movY *= -1;
-     }
-   }
+  // Is mouse over object
+  if (mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h) {
+    rollover = true;
+  }
+  else {
+    rollover = false;
+  }
+
+  // Adjust location if being dragged
+  if (dragging) {
+    x = mouseX + offsetX;
+    y = mouseY + offsetY;
+  }
+
+  noStroke();
+  // Different fill based on state
+  if (dragging) {
+    fill ('rgb(255, 157, 216)');
+  } else if (rollover) {
+    fill('rgb(255, 157, 216)');
+  } else {
+    fill('rgb(168, 234, 255)');
+  }
+  ellipse(x, y, w, h);
+}
+
+function mousePressed() {
+  // Did I click on the rectangle?
+  if (mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h) {
+    dragging = true;
+    // If so, keep track of relative location of click to corner of rectangle
+    offsetX = x-mouseX;
+    offsetY = y-mouseY;
+  }
+}
+
+function mouseReleased() {
+  dragging = false;
 }
